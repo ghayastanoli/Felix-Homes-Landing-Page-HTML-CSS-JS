@@ -1,0 +1,106 @@
+/* Reset and font */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Overall section styling */
+.section1 {
+    width: 100%;
+}
+
+/* Background container with a height of 600px */
+.nav-bg-container {
+    position: absolute; /* Positioned behind the header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px; /* Set the height of the background */
+    z-index: -1; /* Behind the header */
+}
+
+/* Background color for 50% of the width */
+.background-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* 50% of the width */
+    height: 100%; /* Full height of 600px */
+    background-color: rgba(40, 145, 31, 0.5); /* Blue with 50% opacity */
+}
+
+/* Pattern divs to overlay the background color */
+.pattern-divs {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; /* Above the background color */
+}
+
+.pattern-div {
+    position: absolute;
+    background-image: linear-gradient(90deg, rgba(143, 150, 199, 0), #11284e);
+    z-index: -1;
+    right: 0;
+    top: 10%;
+    height: 200px;
+    width: 50%;
+}
+
+/* Navigation container */
+.nav-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent; /* Make navigation transparent */
+}
+
+/* Navigation content */
+.nav-left-flex {
+    display: flex;
+    gap: 49px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white; /* Default for transparent */
+    transition: color 0.3s ease;
+}
+
+.nav-container.scrolled .nav-list li {
+    color: #233579;
+}
+
+/* Phone and account navigation */
+.phone-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-nav img {
+    height: 24px;
+}
+
+.phone-nav a {
+    text-decoration: none;
+    color: white; /* Default for transparent */
+}
+
+.nav-container.scrolled .phone-nav a {
+    color: #233579;
+}
+
+.account-nav img {
+    height: 24px;
+}
