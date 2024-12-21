@@ -17,3 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize as transparent
     navContainer.classList.add('transparent');
 });
+
+
+/// hiding text lines
