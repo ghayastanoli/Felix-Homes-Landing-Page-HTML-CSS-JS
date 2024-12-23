@@ -227,13 +227,18 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
+    
+}
+.rat-cen{
+    margin: 0 auto;
+    max-width: 1350px;
+    width: 100%;
 }
 .rat-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 20px;
-    
 
 }
 .rat-flex1{
@@ -314,6 +319,7 @@
     line-height: 1.6;
     letter-spacing: .1rem;
     padding-bottom: 12px;
+    font-weight: 300;
 
 }
 .sec-3-right-text h2{
@@ -602,6 +608,7 @@
     letter-spacing: .1rem;
     padding-bottom: 12px;
     text-align: center;
+    font-weight: 300;
 }
 .sec-6-text h2{
     color: #233759;
@@ -705,6 +712,7 @@
     padding-bottom: 12px;
     text-align: center;
     padding-bottom: 20px;
+    font-weight: 300;
 }
 
 .sec-8-text h2{
@@ -747,47 +755,299 @@
 .sec8-btn img{
     height: 20px;
 }
+
 .sec-9-articles {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    gap: 20px; 
-    padding: 20px;
-    background-color: #f9f9f9; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px; /* Adjust padding if needed */
+}
+.sec-9a-articles {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    padding: 10px;
+    padding-left: 74px;
+    margin: 0 auto;
+    max-width: 1350px;
+    width: 100%;
+
 }
 
 .article-link {
-    display: grid;
-    grid-template-columns: 80px 1fr auto; 
-    gap: 20px; 
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: #f9f9f9;
+    align-items: flex-start; /* Align items at the top */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width */
+    border-radius: 15px;
+}
+
+.article-img-div {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
 }
 
 .article-img {
-    width: 80px; 
-    height: 80px; 
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
 }
-.arr-round{
+
+.arr-round {
     height: 32px;
     margin-top: 100px;
-
 }
-.art-heading{
+
+.art-heading {
     padding-top: 12px;
-    font-size: calc(1rem* 1.125);
+    font-size: calc(1rem * 1.125);
     font-weight: 400;
     line-height: 1.25;
     color: #233759;
     text-overflow: ellipsis;
     overflow: hidden;
     margin: 0 0 10px;
+    min-width: 300px;
 }
+
+.art-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.art-btn{
+    background-color: #fff;
+    color: #5577f2;
+    border: 1px solid #5577f2;
+    font-weight: 500;
+    padding: 15px 46px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.sec-9-text h3{
+    color: #ee6c4d;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    padding-top: 82px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+.sec-9-text h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 0.6;
+    white-space: pre-line;
+    padding-bottom: 12px;
+    text-align: center;
+    padding-bottom: 18px;
+    font-weight: 700;
+    color: rgb(35, 55, 89);
+    margin-bottom: calc(20px);
+}
+.sec-9-imgs{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.sec-9-imgs img{
+    height: 55px;
+}
+.press-img2{
+    height: 55px;
+    margin: 15px;
+}
+
+.sec10-container{
+    display: flex;
+    justify-content: center;
+    background-color: #eef1fe;
+    max-width: 840px;
+    border-radius: 10px;
+    padding-top: calc(2* 16px);
+    padding-bottom: calc(2* 16px);
+    margin: 50px auto;
+    margin-top: 80px;
+}
+.sec10-container h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: pre-line;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 12px;
+    font-weight: 700;
+    color: rgb(35, 55, 89);
+}
+.sec10-container p{
+    text-align: center;
+    font-size: calc(1rem* 1.125);
+    font-weight: 200;
+    line-height: 1.25;
+    color: #233759;
+    margin-bottom: calc(1.25* 16px);
+}
+.chat-btn{
+    display: flex;
+    justify-content: center;
+}
+.sec10-btn{
+    background-color: #5577f2;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 500;
+    padding: 15px 46px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.footer{
+    background-color: #233759;
+    padding: 100px 70px;
+    padding-bottom: 30px;
+}
+
+.footer-content{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1350px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    color: white;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+    max-width: 100%; /* Ensure it doesn't grow beyond the container */
+}
+
+.footer-nav {
+    list-style: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.a-1 h3 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+.a-1{
+    padding-top: 44px;
+    flex: 1; 
+    font-size: 16px;
+    line-height: 2.2;
+}
+.a-2{
+    flex: 1; 
+    font-size: 16px;
+    line-height: 2.2;
+    max-width: 138px;
+}
+
+.a-3 {
+    flex: 1; 
+    font-size: 16px;
+    line-height: 2.2;
+    
+}
+.a-3 h4{
+    padding-bottom: 2px;
+}
+
+.a-3 {
+    padding-left: 40px; /* Remove fixed padding for flexibility */
+}
+
+.footer-2-text{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+.add{
+    color: white;
+    font-size: 18px;
+    line-height: 2;
+}
+.sec-text-flex{
+    padding-top: 80px;
+}
+.pp{
+    border-right: 2px solid white;
+    font-size: 18px;
+}
+.ps{
+    padding-left: 5px;
+    font-size: 18px;
+}
+.pt{
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.a-1 a{
+    height: 90px;
+}
+
+.social-media-icon{
+    height: 24px;
+}
+.logo-flex{
+    display: flex;
+    gap: 10px;
+    padding-top: 5px;
+}
+.img-felix{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 38px;
+}
+.img-felix p{
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: .005em;
+    color: #fff;
+}
+.text-felix{
+    display: flex;
+    gap: 40px;
+    margin-right: 90px;
+}
+.text-felix p{
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: .005em;
+    color: #fff;
+}
+
+
+
+
+/*
 .art-exp{
     font-size: calc(1rem);
     font-weight: 300;
     line-height: 1.25;
     color: #233759;
-}
+} */
