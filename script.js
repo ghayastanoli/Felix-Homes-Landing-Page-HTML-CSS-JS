@@ -19,4 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/// hiding text lines
+/// hamburger
+
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mobileNav = document.querySelector('.mobile-nav');
+const closeBtn = document.querySelector('.close-btn');
+
+function toggleMenu() {
+  mobileNav.classList.toggle('active');
+}
+
+mobileMenuBtn.addEventListener('click', toggleMenu);
+closeBtn.addEventListener('click', toggleMenu);
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!mobileNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+    mobileNav.classList.remove('active');
+  }
+});
