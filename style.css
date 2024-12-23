@@ -748,7 +748,7 @@
 }
 .sec8-btn h3{
     font-size: calc(1rem* .875);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.4;
     color: #233759;
 }
@@ -875,7 +875,7 @@
     padding-top: calc(2* 16px);
     padding-bottom: calc(2* 16px);
     margin: 50px auto;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .sec10-container h3{
     font-size: 36px;
@@ -928,7 +928,7 @@
     flex-wrap: wrap; /* Allow items to wrap into multiple rows */
     color: white;
     justify-content: space-between;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #4f5f7a;
     padding-bottom: 30px;
     max-width: 100%; /* Ensure it doesn't grow beyond the container */
 }
