@@ -38,3 +38,6 @@ document.addEventListener('click', (e) => {
     mobileNav.classList.remove('active');
   }
 });
+
+
+/*---------------------------------*/

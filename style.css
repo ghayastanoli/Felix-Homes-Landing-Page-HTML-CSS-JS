@@ -266,11 +266,11 @@
 }
 
 .zillow-img img{
-    height: 40px;
+    aspect-ratio: 2/3;
     ;
 }
 .google-img img{
-    height: 58px;
+    aspect-ratio: 1/2;
 }
 
 .rat-flex1 p{
@@ -309,6 +309,13 @@
     border-radius: 20px;
     object-fit: cover;
     width: 100%;
+}
+.sec-5-left-img img{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+
 }
 
 .sec-3-right-text{
@@ -422,22 +429,46 @@
 }
 
 
-
 .sec-bg-container-full {
     position: relative; 
     width: 100%;
     z-index: -1; 
-    height: 715px;
+    min-height: 715px; /* Changed from fixed height to min-height */
+    height: 100%; /* Added to allow growth */
 }
-
 
 .background-color-full {
     position: absolute;
     width: 100%; 
     height: 100%; 
     background-color: #233759;
-    overflow: hidden;
+    overflow: hidden; /* Changed from hidden to visible */
+    min-height: 100%; /* Added to ensure full coverage */
 }
+
+/* Rest of your existing styles remain the same */
+
+@media (max-width: 986px) {
+    .sec-bg-container-full {
+        height: auto; /* Allow container to grow with content */
+        padding-bottom: 40px; /* Add some padding at the bottom */
+    }
+    
+    .background-color-full {
+        position: relative; /* Change to relative for proper height calculation */
+    }
+    .rev-btn-flex{
+        padding-bottom: 25px;
+        margin-left: 25px;
+    }
+}
+
+
+
+
+
+
+
 .sec-5-content{
     position: relative;
     z-index: 2;
@@ -531,6 +562,7 @@
 
 .home-img{
     height: 214px;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -601,6 +633,44 @@
     border-radius: 10px;
     font-size: 16px;
 }
+
+/*-------------------------*/
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    padding: 16px 0;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .rev-card {
+    flex: 0 0 auto;
+    width: calc(33.333% - 28px);
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 986px) {
+    .cards {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    .rev-card {
+      width: 100%;
+      margin: 0;
+    }
+  
+    /* Remove slider-related styles */
+    .slider-dots {
+      display: none;
+    }
+  }
+/* ----------------------------------------*/
 
 .check-flex{
     display: flex;
@@ -714,6 +784,10 @@
   @media (max-width: 576px) {
     .home-card-container {
       grid-template-columns: 1fr;
+      padding: 0 45px;
+    }
+    .sec-6-text{
+        padding: 0 45px;
     }
   }
 .sec-5-btn{
@@ -1077,7 +1151,7 @@
     flex: 1; 
     font-size: 16px;
     line-height: 2.2;
-    max-width: 138px;
+    max-width: 100%;
 }
 
 .a-3 {
